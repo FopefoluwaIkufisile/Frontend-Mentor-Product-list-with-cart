@@ -148,23 +148,10 @@ const renderProducts = (data) => {
     .join("");
 };
 
-const saveCartToLocalStorage = () => {
-    localStorage.setItem("cart", JSON.stringify(cart)); 
-  };
-  const loadCartFromLocalStorage = () => {
-    const storedCart = localStorage.getItem("cart");
-    if (storedCart) {
-      return JSON.parse(storedCart); 
-    }
-    return [];
-  };
 
   
-  let cart = loadCartFromLocalStorage();
+  let cart = [];
   
-  document.addEventListener("DOMContentLoaded", ()=>{
-    generateCart();
-  })
 if (cart.length === 0) {
   cartquantity.textContent = "0";
 }
@@ -213,7 +200,6 @@ const generateCart = () => {
     .forEach((e) => (e.textContent = `$${orderTotal}`));
 
   deleteFromCart();
-saveCartToLocalStorage();
 
 };
 renderProducts(data);
@@ -319,7 +305,6 @@ const deleteFromCart = () => {
         cart.splice(index, 1);
       }
       generateCart();
-      localStorage.removeItem("cart")
     });
   });
 };
