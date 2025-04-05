@@ -77,6 +77,12 @@ img {
   border-radius: 10px;
 }
 
+.product-image-container:focus .add-to-cart{
+  background-color: var(--red);
+  color: white;
+}
+
+
 /* Add to Cart Button */
 .add-to-cart {
   width: 60%;
@@ -92,6 +98,10 @@ img {
   border: 1px solid var(--rose-900);
   border-radius: 9999px;
   cursor: pointer;
+}
+.add-to-cart:hover{
+  color: var(--red);
+  border: 1px solid var(--red);
 }
 .add-to-cart img {
   width: 20px;
@@ -117,6 +127,10 @@ img {
   font-size: 1.1rem;
   color: var(--red);
   font-weight: 700;
+}
+.default-div{
+  display: flex;
+  flex-direction: column;
 }
 
 /* Dessert Section */
@@ -169,6 +183,16 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.total-deets{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  display: none;
+}
+.total-in-cart{
+  display: flex;
+  justify-content: space-between;
 }
 .items-in-cart-details {
   display: flex;
@@ -241,6 +265,9 @@ img {
   font-size: 2rem;
   font-weight: 700;
   color: var(--rose-900);
+}
+.remove{
+  cursor: pointer;
 }
 .order-content-container {
   padding: 15px;
@@ -343,9 +370,18 @@ img {
   font-weight: 600;
   font-family: "Red Hat Text", sans-serif;
   margin-top: 10px;
+  width: 100%;
 }
 .start:hover, .confirm:hover {
   background-color: hsl(14, 86%, 27%);
+}
+@media(max-width: 877px){
+  .dessert-div{
+    width: 50%;
+  }
+  .cart-div{
+    width: 50%;
+  }
 }
 
 /* Responsive Styles */
