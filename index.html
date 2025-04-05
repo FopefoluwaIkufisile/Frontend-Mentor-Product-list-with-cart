@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="dessert-div">
+        <h1 class="main-text">Desserts</h1>
+        <div class="products-container"></div>
+      </div>
+      <div class="cart-div">
+        <div class="cart">
+          <p id="cart-heading">Your Cart (<span id="cart-quantity"></span>)</p>
+          <div class="default-div">
+            <div class="cart-default-image">
+              <img src="./assets/images/illustration-empty-cart.svg" alt="" />
+            </div>
+            <p class="empty-cart">Your added items will appear here</p>
+          </div>
+          <div class="items-in-cart-div">
+            <div class="item-in-cart">
+              <div class="items-in-cart-details">
+                <div class="item-name">Classic Tiramisu</div>
+                <div class="rate-price-details">
+                  <p class="rate">1x</p>
+                  <p class="at">@$5.50</p>
+                  <p class="rate-price">$5.50</p>
+                </div>
+              </div>
+              <div class="close-img-container">
+                <img src="./assets/images/icon-remove-item.svg" alt="remove" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="item-in-cart">
+              <div class="items-in-cart-details">
+                <div class="item-name">Classic Tiramisu</div>
+                <div class="rate-price-details">
+                  <p class="rate">1x</p>
+                  <p class="at">@$5.50</p>
+                  <p class="rate-price">$5.50</p>
+                </div>
+              </div>
+              <div class="close-img-container">
+                <img src="./assets/images/icon-remove-item.svg" alt="remove" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="total-in-cart">
+              <p class="order-total-text">Order Total</p>
+              <p class="order-total-price">$46.50</p>
+            </div>
+            <div class="carbon-neutral">
+              <div class="neutral-image-container">
+                <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+              </div>
+              <p class="carbon">This is a <span class="brown">carbon-neutral </span>delivery</p>
+            </div>
+            <button class="confirm">Confirm Order</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal-background">
+      <div class="order-confirmed-modal">
+        <div class="order-confirmed-image">
+          <img src="./assets/images/icon-order-confirmed.svg" alt="" />
+        </div>
+        <div class="order-text">
+          <p id="order-confirmed-text">Order Confirmed</p>
+          <p id="enjoy">We hope you enjoy your food!</p>
+        </div>
+        <div class="order-content-container">
+          <div class="order-content">
+            <div class="order-item">
+              <div class="order-item-pic-container">
+                <img src="./assets/images/image-baklava-desktop.jpg" alt="" />
+              </div>
+              <div class="order-item-text">
+                <p id="order-item-name">Test</p>
+                <div class="quantity-div">
+                  <p id="order-item-quantity">4x</p>
+                  <p id="order-item-rate">@5.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="order-price">
+              <p class="order-item-total-price">5$.00</p>
+            </div>
+          </div>
+          <div class="order-content">
+            <div class="order-item">
+              <div class="order-item-pic-container">
+                <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+              </div>
+              <div class="order-item-text">
+                <p id="order-item-name">Test</p>
+                <div class="quantity-div">
+                  <p id="order-item-quantity">4x</p>
+                  <p id="order-item-rate">@5.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="order-price">
+              <p class="order-item-total-price">5$.00</p>
+            </div>
+          </div>
+          <div class="order-content">
+            <div class="order-item">
+              <div class="order-item-pic-container">
+                <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+              </div>
+              <div class="order-item-text">
+                <p id="order-item-name">Test</p>
+                <div class="quantity-div">
+                  <p id="order-item-quantity">4x</p>
+                  <p id="order-item-rate">@5.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="order-price">
+              <p class="order-item-total-price">5$.00</p>
+            </div>
+          </div>
+          <div class="order-total-div">
+            <p class="order-total-text">Order Total</p>
+            <p class="order-total-price">$46.50</p>
+          </div>
+        </div>
+
+        <button class="start">Start New Order</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Ikufisile Fopefoluwa</a>.
+    </div>
+  </body>
+</html>
